@@ -65,6 +65,11 @@ Children:
   - Class: Reference
     Target: ns=25;i=154
     Direction: Forward
+  - Name: Message
+    Id: g=3066e17bb93c60be1cd40669d3e96153
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Digital Alarm"}
 - Name: ExclusiveLevelAlarm1
   Id: g=b2307ead48027c9110c96d6cd22f28fc
   Type: ExclusiveLevelAlarmController
@@ -124,6 +129,31 @@ Children:
   - Class: Reference
     Target: ns=25;i=154
     Direction: Forward
+  - Name: HighLimit
+    Id: g=9a032d929596ad4229dcd6715b7d7940
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 80.0
+  - Name: LowLimit
+    Id: g=cf963b1c3c8df3f252d333c1a390bc55
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 40.0
+  - Name: Message
+    Id: g=174c676fd0a53ee624439483f93914ca
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighStateMessage
+      Id: g=4a3b2dd58ecc2ca55b5efd5bbc9c7968
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Level High"}
+    - Name: LowStateMessage
+      Id: g=c85ca66fa9542bbad136e37ef891c93f
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Level Low"}
 - Name: ExclusiveDeviationAlarm1
   Id: g=98c66c0deef8ef6da71c31a50afcd979
   Type: ExclusiveDeviationAlarmController
@@ -132,6 +162,7 @@ Children:
     Id: g=4ed5fccf2a54718b5befccefffa659f2
     Type: BaseDataVariableType
     DataType: Double
+    Value: 5.0
   - Name: InputValue
     Id: g=c9e4c0be49f5402634e76b8da53f5bc7
     Type: BaseDataVariableType
@@ -219,6 +250,21 @@ Children:
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
+  - Name: Message
+    Id: g=bd53d04e4d430753a7aa3d9593ad3637
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighHighStateMessage
+      Id: g=5e2734f1b8af79acac9dd1e71745559b
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"High high"}
+    - Name: LowLowStateMessage
+      Id: g=ed3aecc2ffaee4610b03c08d6fcb2fd6
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Low Low"}
 - Name: ExclusiveRateOfChangeAlarm1
   Id: g=fc124b984493dcc0cb091696702612af
   Type: ExclusiveRateOfChangeAlarmController
@@ -227,6 +273,7 @@ Children:
     Id: g=38a3cf1f79e54e95c07ee44d97cf15f2
     Type: BaseDataVariableType
     DataType: Duration
+    Value: "0:00:00:02.0000000"
   - Name: InputValue
     Id: g=0bddb0fa1de9dacc10913a08ea9796e9
     Type: BaseDataVariableType
@@ -314,50 +361,33 @@ Children:
         Type: BaseVariableType
         DataType: DynamicLinkMode
         Value: 2
-- Name: NonExclusiveLevelAlarm1
-  Id: g=bbb4e381871686a80fed98f7d8a9bb83
-  Type: NonExclusiveLevelAlarmController
-  Children:
-  - Name: InputValue
-    Id: g=9e81848682f5871c4780f4a3f7aca67a
+  - Name: MaxTimeShelved
+    Id: g=d5ccf62030e5125a3a20b98e409aa8af
     Type: BaseDataVariableType
-    DataType: Double
-  - Name: LastEvent
-    Id: g=6b150793e7c51cb93c9e320659a1815f
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: PresetTimeShelved
+    Id: g=c88afda167cb00b3bed2f1bc54c7e7cb
     Type: BaseDataVariableType
-    DataType: BaseDataType
-    ValueRank: OneDimension
-    ArrayDimensions: [0]
-  - Class: Reference
-    Target: ns=25;i=81
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=82
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=83
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=130
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=135
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=132
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=146
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=148
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=150
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=152
-    Direction: Forward
-  - Class: Reference
-    Target: ns=25;i=154
-    Direction: Forward
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: Message
+    Id: g=c9aaeac52ee988f26aa6da000139212f
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Children:
+    - Name: HighHighStateMessage
+      Id: g=da875d2c35d6e5e9388ea936c6973c2a
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: HighStateMessage
+      Id: g=c79c09ef24836a6414611511722c3dd6
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"High"}
+    - Name: LowStateMessage
+      Id: g=7f21074f50085c1c962bebbc82af106e
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":7,"TextId":"Low"}
