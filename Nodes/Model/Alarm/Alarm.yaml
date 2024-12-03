@@ -1,0 +1,41 @@
+Name: Alarm
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: AnalogVariable1
+  Type: AnalogItemType
+  DataType: Float
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 10.0
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 90.0
+- Name: AnalogVariable2
+  Type: AnalogItemType
+  DataType: Float
+  Children:
+  - Name: EURange
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 10.0
+    - Name: High
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 90.0

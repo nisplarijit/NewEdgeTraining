@@ -69,3 +69,4 @@ Children:
   Id: g=109be1ca0d27a82ed52d40f4e9beed7d
   Type: BaseDataVariableType
   DataType: Boolean
+- File: Alarm/Alarm.yaml

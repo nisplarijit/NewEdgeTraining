@@ -363,6 +363,36 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel8
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NewEdgeTraining/UI/Screens/Alarm"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel9
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NewEdgeTraining/UI/Screens/AlarmHistory"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -756,3 +786,4 @@ Children:
       ModellingRule: Optional
       Value: 20.0
 - File: AdvancedTrend/AdvancedTrend.yaml
+- File: AlarmWidgets/AlarmWidgets.yaml
