@@ -1,0 +1,23 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: VariableGenerator
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "85a198b89e485d4b212205da7bebceb8",
+       "objectGuid": "65a2e8f9a8ad82430f8adb6dac36cf46",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

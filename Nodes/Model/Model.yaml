@@ -1,0 +1,71 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: DI/DI.yaml
+- File: Animation/Animation.yaml
+- File: MyTypes/MyTypes.yaml
+- Name: Motor1
+  Type: Motor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: RFB
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../On"
+- Name: Motor2
+  Type: Motor
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: RFB
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../On"
+- File: Tags/Tags.yaml
+- Name: RandomEn
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Reportview
+  Id: g=13924079de2aaa6bddff15aa58a5434e
+  Type: BaseDataVariableType
+  DataType: Boolean
+- File: Events/Events.yaml
+- Name: ReportviewE
+  Id: g=109be1ca0d27a82ed52d40f4e9beed7d
+  Type: BaseDataVariableType
+  DataType: Boolean

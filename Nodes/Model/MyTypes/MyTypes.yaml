@@ -1,0 +1,36 @@
+Name: MyTypes
+Type: FolderType
+Children:
+- Name: Motor
+  Id: g=001cd446e5ff01946960be6964942bc4
+  Supertype: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: On
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: RFB
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../On"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2

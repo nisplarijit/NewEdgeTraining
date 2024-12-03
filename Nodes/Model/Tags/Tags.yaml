@@ -1,0 +1,23 @@
+Name: Tags
+Id: g=56622bef348e537ce9d8653af924cf6c
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=34bb81b5ce40d5cefc3ac17454a9c53c
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable4
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable5
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable6
+  Type: BaseDataVariableType
+  DataType: Int32

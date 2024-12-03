@@ -1,0 +1,13 @@
+Name: Events
+Id: g=b8e4b5d6ab8c2bbcc74ca58136ae0a04
+Type: FolderType
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
